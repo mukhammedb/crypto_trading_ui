@@ -1,0 +1,120 @@
+import 'package:crypto_trading_ui/models/trade.dart';
+import 'package:flutter/material.dart';
+
+import '../models/currency.dart';
+
+class MockPortfolio {
+  static final data = [
+    Currency(
+      code: 'BTC',
+      name: 'Bitcoin',
+      icon: Image.asset('assets/images/btc1.png'),
+      currentAmount: 0.0928,
+      profit: 0.0738,
+      priceHistory: [
+        23884.20,
+        23866.40,
+        24588.90,
+        26743.56,
+        24567.98,
+        25321.56,
+        27583.78,
+        26342.89,
+        26890.76,
+        23456.67,
+        24578.69,
+        25436.56,
+        28764.35,
+        24356.12,
+        21345.53,
+        23678.43,
+        23145.67,
+        26453.87,
+        29876.43,
+        20987.43,
+        21435.65,
+        26785.43,
+        27654.46,
+        29876.78,
+      ],
+      tradeHistory: [
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-09-05',
+          amount: 0.0462,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-08-09',
+          amount: 0.0186,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-07-05',
+          amount: 0.0745,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-06-05',
+          amount: 0.0678,
+        ),
+      ],
+    ),
+    Currency(
+      code: 'ETH',
+      name: 'Ethereum',
+      icon: Image.asset('assets/images/eth1.png'),
+      currentAmount: 1.08,
+      profit: 0.1165,
+      priceHistory: [
+        1727.19,
+        1717.50,
+        1713.63,
+        1727.28,
+        1741.16,
+        1729.92,
+        1716.35,
+        1716.68,
+        1728.14,
+        1728.94,
+        1729.44,
+        1782.86,
+        1766.68,
+        1682.86,
+        1699.64,
+        1699.65,
+        1724.64,
+        1722.46,
+        1691.95,
+        1695.87,
+        1724.28,
+        1732.05,
+        1716.33,
+        1742.81,
+        1723.62,
+      ],
+      tradeHistory: [
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-07-27',
+          amount: 0.712,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-06-19',
+          amount: 0.236,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.sell,
+          date: '2022-06-14',
+          amount: 0.394,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-5-07',
+          amount: 0.576,
+        ),
+      ],
+    ),
+  ];
+}

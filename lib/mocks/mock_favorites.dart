@@ -1,0 +1,128 @@
+import 'package:flutter/material.dart';
+
+import '../models/currency.dart';
+import '../models/trade.dart';
+
+class MockFavorites {
+  static final data = [
+    Currency(
+      code: 'XRP',
+      name: 'Ripple',
+      icon: Image.asset('assets/images/xrp.png'),
+      priceHistory: [
+        0.36995,
+        0.37987,
+        0.35478,
+        0.35789,
+        0.37654,
+        0.39876,
+        0.35469,
+        0.38490,
+        0.37896,
+        0.36748,
+        0.36995,
+        0.37987,
+        0.35478,
+        0.35789,
+        0.37654,
+        0.39876,
+        0.35469,
+        0.38490,
+        0.37896,
+        0.36748,
+      ],
+      tradeHistory: [
+        Trade(
+          tradeDirection: TradeDirection.sell,
+          date: '2022-06-03',
+          amount: 450,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.sell,
+          date: '2022-05-24',
+          amount: 250,
+        ),
+        Trade(
+          tradeDirection: TradeDirection.buy,
+          date: '2022-03-12',
+          amount: 700,
+        ),
+      ],
+    ),
+    Currency(
+      code: 'LTC',
+      name: 'Litocoin',
+      icon: Image.asset('assets/images/ltc.png'),
+      priceHistory: [
+        61.56,
+        61.45,
+        61.78,
+        60.78,
+        62.67,
+        63.67,
+        61.56,
+        61.56,
+        61.45,
+        61.78,
+        60.78,
+        62.67,
+        63.67,
+        61.56,
+        61.56,
+        61.45,
+        61.78,
+        60.78,
+        62.67,
+        63.67,
+        61.56,
+      ],
+    ),
+    Currency(
+        code: 'ADA',
+        name: "Cardano",
+        icon: Image.asset('assets/images/ada.png'),
+        priceHistory: [
+          0.57864,
+          0.56743,
+          0.57342,
+          0.57895,
+          0.51234,
+          0.59087,
+          0.57864,
+          0.56743,
+          0.57342,
+          0.57895,
+          0.51234,
+          0.59087,
+          0.57864,
+          0.56743,
+          0.57342,
+          0.57895,
+          0.51234,
+          0.59087,
+          0.57864,
+          0.56743,
+          0.57342,
+          0.57895,
+          0.51234,
+          0.59087,
+        ],
+        tradeHistory: [
+          Trade(
+            tradeDirection: TradeDirection.sell,
+            date: '2022-05-22',
+            amount: 850,
+          ),
+          Trade(
+            tradeDirection: TradeDirection.buy,
+            date: '2022-04-19',
+            amount: 350,
+          ),
+          Trade(
+            tradeDirection: TradeDirection.buy,
+            date: '2022-04-14',
+            amount: 500,
+          )
+        ]),
+  ];
+}
